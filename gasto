@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+int main() {
+    char carro[50];
+    int ganhos, gastos, saldo; // Added comma between variable declarations
+
+    printf("Digite o nome:");
+    scanf("%s", carro); // Changed variable name to carro
+
+    printf("Digite os ganhos:");
+    scanf("%d", &ganhos);
+
+    printf("Digite os gastos:"); // Changed prompt message
+    scanf("%d", &gastos); // Changed variable name to gastos
+
+    saldo = ganhos - gastos;
+
+    if (saldo >= 200) {
+        printf("Tenho saldo\n");
+    } else {
+        printf("Pouco saldo\n");
+    }
+
+    return 0;
+
+
