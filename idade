@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    char nome[100];
+    int idade;
+   
+    printf("Digite o nome: ");
+    scanf("%99s", nome); // Using "%99s" to prevent buffer overflow and handle whitespace input
+    
+    printf("Digite a idade: ");
+    scanf("%d", &idade);
+    
+    if (idade >= 18) {
+        printf("Adulto\n");
+    } else {
+        printf("Criança\n");
+    }
+    return 0;
+}
