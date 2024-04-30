@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main (){
+    int nota; 
+  while(true){
+    printf("digite uma nota de 0 a 10: ");
+   scanf("%d", &nota);
+   
+   if (nota >= 0 && nota <= 10 && nota == nota) {
+      printf("nota correta! acesso concedido.");
+      break;
+   } else {
+        printf("nota incorreta! acesso negado.");
+   }
+   
+}
+    return 0;
+}
+ 
+ 
